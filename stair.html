@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>staircase</title>
+    </head>
+    <body>
+        <h1>Print a staircase of size n</h1>
+    </body>
+    <script>
+        let n=4, i, j, s = 0, p = 0;
+
+ 
+ //No of rows of pattern 
+ 
+    for(i = 0; i < n; i++)
+    {
+        s = n - (i+1);
+        for(j = 0; j < s; j++)
+        {
+            document.write(" ");
+        }
+  
+ // We are going to print no. of space minus 1 each time 
+        p = i + 1;
+  
+        for(j = 0; j < p; j++)
+        {
+            document.write("#");
+           // <br/> 
+        }
+        
+        //<br/>
+  
+  //Printing the Hash("#") pattern
+  
+        document.write("<br/>");
+        //<br/>
+    }
+    
+
+    </script>
+</html>
